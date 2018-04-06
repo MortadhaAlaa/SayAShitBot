@@ -14,7 +14,7 @@ def message(bot, update):
     bot.send_message(chat_id='-1001343883321', text=update.message.text)
     bot.send_message(chat_id=update.message.chat_id,
                      text='''هلاو برو 
-رسالتك وصلت لمقر القياده حيجاوبون عليها من يشوفوها 🌻''')
+رسالتك وصلت لمقر القيادة حيجاوبون عليها من يشوفوها 🌻''')
     #bot.forward_message(chat_id='-253860529', from_chat_id=update.message.chat_id, message_id=update.message.message_id)
 
 def error(bot, update, error):
