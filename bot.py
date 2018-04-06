@@ -6,12 +6,16 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 
 def start(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text='مرحبا ب بوت السايات الخاص بلايلب..🔥\nاكتب السؤال الي تحب تسألة ، حيوصل للالومناي بصورة مجهولة! \nويتم الرد عليه باقرب وقت بلقناة❤️')
+    bot.send_message(chat_id=update.message.chat_id, 
+                     text='''هلا بيكم ببوت ARZ 🌻
+دز اي شي و حيوصل للادمنية بصورة مجهولة''')
 
 def message(bot, update):
-    bot.send_message(chat_id='-1001215024679', text=update.message.text)
-    bot.send_message(chat_id=update.message.chat_id, text='تم ارسال رسالتك بصورة مجهولة،\nانتظر الجواب قريبا على القناة ❤️..')
-    bot.forward_message(chat_id='-253860529', from_chat_id=update.message.chat_id, message_id=update.message.message_id)
+    bot.send_message(chat_id='-1001343883321', text=update.message.text)
+    bot.send_message(chat_id=update.message.chat_id,
+                     text='''هلاو برو 
+رسالتك وصلت لمقر القياده حيجاوبون عليها من يشوفوها 🌻''')
+    #bot.forward_message(chat_id='-253860529', from_chat_id=update.message.chat_id, message_id=update.message.message_id)
 
 def error(bot, update, error):
      logging.warning('Update "%s" caused error "%s"' % (update, error))    
