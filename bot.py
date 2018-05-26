@@ -10,7 +10,7 @@ def start(bot, update):
                      text='''مرحبا بك عزيزي {} 😃🖐🏼.
 
 هلااوو شلونككك اخبارك زين لو مو زين ضمصوب . 
-المهم اَي هذا بوت تكدر تتواصل بي وي كل ادمنز قناة متت .'''.format(update..message.from_user.first_name))
+المهم اَي هذا بوت تكدر تتواصل بي وي كل ادمنز قناة متت .'''.format(update.message.from_user.first_name))
 
 def message(bot, update):
     bot.send_message(chat_id='-1001399878813', text=update.message.text)
