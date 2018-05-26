@@ -21,7 +21,7 @@ def message(bot, update):
     #bot.forward_message(chat_id='-253860529', from_chat_id=update.message.chat_id, message_id=update.message.message_id)
 
 def reply(bot, update):
-    if update.message.chat_id != '-1001399878813':
+    if update.message.chat_id != -1001399878813:
         return
     original_m = update.message.reply_to_message
     original_chat = chat_ids[original_m.message_id]
