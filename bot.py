@@ -13,7 +13,7 @@ def start(bot, update):
 المهم اَي هذا بوت تكدر تتواصل بي وي كل ادمنز قناة متت .'''.format(update.from_user.first_name))
 
 def message(bot, update):
-    bot.send_message(chat_id='-1001343883321', text=update.message.text)
+    bot.send_message(chat_id='-1001399878813', text=update.message.text)
     bot.send_message(chat_id=update.message.chat_id,
                      text='''شكرًا على ارسالك المسج حنرد عليك لمن نفتح 💙💙''')
     #bot.forward_message(chat_id='-253860529', from_chat_id=update.message.chat_id, message_id=update.message.message_id)
