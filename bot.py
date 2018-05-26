@@ -10,7 +10,7 @@ def start(bot, update):
                      text='''مرحبا بك عزيزي {} 😃🖐🏼.
 
 هلااوو شلونككك اخبارك زين لو مو زين ضمصوب . 
-المهم اَي هذا بوت تكدر تتواصل بي وي كل ادمنز قناة متت .'''.format(update.from_user.first_name))
+المهم اَي هذا بوت تكدر تتواصل بي وي كل ادمنز قناة متت .'''.format(update..message.from_user.first_name))
 
 def message(bot, update):
     bot.send_message(chat_id='-1001399878813', text=update.message.text)
@@ -23,7 +23,7 @@ def error(bot, update, error):
 u = Updater(os.environ['TELEGRAM_TOKEN'])
 d = u.dispatcher
 d.add_handler(CommandHandler('start', start))
-d.add_handler(MessageHandler(Filters.text&Filters.private&(~Filters.reply), message))
+d.add_handler(MessageHandler(Filters.text&Filters.private, message))
 d.add_error_handler(error)
 
 u.start_polling()
