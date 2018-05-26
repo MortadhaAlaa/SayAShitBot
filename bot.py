@@ -4,7 +4,7 @@ import os, logging
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-chat_ids = {]
+chat_ids = {}
 
 def start(bot, update):
     bot.send_message(chat_id=update.message.chat_id, 
